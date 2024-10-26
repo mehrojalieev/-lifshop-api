@@ -15,9 +15,9 @@ const PORT = process.env.PORT || 5050
 const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_CONNECT_URL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 5000,
+            // useNewUrlParser: true,
+            // useUnifiedTopology: true,
+            // serverSelectionTimeoutMS: 5000,
         });
         console.log('MongoDB connected');
     } catch (error) {
